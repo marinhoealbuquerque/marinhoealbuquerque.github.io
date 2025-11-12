@@ -136,5 +136,15 @@
   <a href="https://wa.me/5511943888812" class="whats" target="_blank" rel="noopener" aria-label="WhatsApp">
     <img src="imagens/whatsapp-icon-clear.png" alt="WhatsApp" width="56" height="56" decoding="async" loading="lazy">
   </a>
+  
+<script>
+  const items = document.querySelectorAll(".accordion-item");
+
+  items.forEach(item => {
+    item.querySelector(".accordion-header").addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
+</script>
 </body>
 </html>
