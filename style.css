@@ -77,22 +77,17 @@ body {
 
 /* ====== Hero ====== */
 .hero {
-  background: url('/imagens/header-timbrado.png') center/cover no-repeat, var(--preto);
-  color: var(--branco);
-  padding: 120px 20px 100px;
-  text-align: center;
-}
-.hero .logo-centered {
-  display: inline-flex;
-  flex-direction: column;
+  position: relative;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 12px;
-}
-.hero .logo-centered img {
-  height: 80px;
-  width: auto;
-  filter: invert(1);
-  opacity: .95;
+  text-align: center;
+  height: 100vh;              /* ocupa 100% da altura da tela */
+  min-height: 680px;
+  background: url('/imagens/topo.png') center center/contain no-repeat #000;
+  background-attachment: fixed;
+  background-color: #000;
+  color: var(--branco);
 }
 .hero h1 {
   font-family: Poppins, Arial, sans-serif;
@@ -104,6 +99,13 @@ body {
 .hero p {
   color: #cfcfcf;
   margin: 0 0 26px;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 60% at 50% 40%, rgba(0,0,0,.25) 0%, rgba(0,0,0,.65) 100%);
+  pointer-events: none;
 }
 .btn {
   display: inline-block;
