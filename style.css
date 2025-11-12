@@ -70,12 +70,14 @@ body {
 }
 .nav a:hover { color: #fff; }
 
-/* ====== Faixa Hero ====== */
+/* ====== Topo (cabeçalho visual) ====== */
 .hero {
   position: relative;
   text-align: center;
-  height: 520px;
-  background: url('/imagens/topo.png') center 35% / cover no-repeat #000;
+  height: 380px;
+  background: url('/imagens/topo.png') center center / contain no-repeat #000;
+  background-color: #000;
+  border-bottom: 1px solid #1e1e1e;
   color: var(--branco);
   display: flex;
   flex-direction: column;
@@ -86,7 +88,7 @@ body {
 .hero h1 {
   font-family: Poppins, Arial, sans-serif;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 32px;
   margin-bottom: 6px;
 }
 .hero p { color: #ccc; }
@@ -139,7 +141,7 @@ body {
   background: #fff;
   text-align: center;
 }
-.person img { display: none; } /* remove símbolo da equipe */
+.person img { display: none; }
 
 /* ====== Contato ====== */
 .info li {
@@ -157,7 +159,7 @@ body {
   background: var(--preto);
   color: #ccc;
   text-align: center;
-  padding: 28px 20px;
+  padding: 30px 20px;
 }
 .footer-inner {
   display: flex;
@@ -166,12 +168,13 @@ body {
   gap: 10px;
 }
 .footer-logo img {
-  height: 28px;
-  opacity: .8;
+  height: 30px;
+  opacity: .85;
 }
 .footer-text {
   font-size: .9rem;
   color: #aaa;
+  line-height: 1.4;
 }
 
 /* ====== Botão WhatsApp ====== */
