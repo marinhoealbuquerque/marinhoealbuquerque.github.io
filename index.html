@@ -1,107 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Marinho & Albuquerque — Consultoria e Advocacia</title>
-  <meta name="description" content="Escritório de advocacia com atuação em Direito Cível, Família, Empresarial e Ambiental.">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f5f5f5;
-      color: #222;
-    }
-    header {
-      background-color: #0b1f36;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    nav {
-      background-color: #122b4b;
-      text-align: center;
-      padding: 0.5rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #0b1f36;
-      color: white;
-      margin-top: 2rem;
-    }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      font-size: 24px;
-      padding: 12px 16px;
-      border-radius: 50%;
-      text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,.2);
-    }
-  </style>
+  <meta name="description" content="Escritório de advocacia com atuação em Direito Cível, Família, Empresarial e Ambiental. Atuação estratégica, ética e personalizada.">
+  <link rel="icon" href="/imagens/logo-simbolo-ma.png">
+  <link rel="stylesheet" href="/style.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Marinho & Albuquerque — Consultoria e Advocacia">
+  <meta property="og:description" content="Atuação em Direito Cível, Família, Empresarial e Ambiental.">
+  <meta property="og:image" content="/imagens/logo-simbolo-ma.png">
+  <meta property="og:type" content="website">
 </head>
 <body>
-  <header>
-    <h1>Marinho & Albuquerque</h1>
-    <p>Consultoria e Advocacia</p>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="Marinho & Albuquerque">
+        <img src="/imagens/logo-simbolo-ma.png" alt="Símbolo MA">
+        <div>
+          <div class="t1">MARINHO & ALBUQUERQUE</div>
+          <div class="t2">Consultoria e Advocacia</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Áreas</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#sobre">Sobre Nós</a>
-    <a href="#areas">Áreas de Atuação</a>
-    <a href="#contato">Contato</a>
-  </nav>
+  <!-- Hero com banner premium -->
+  <section id="inicio" class="hero" style="background:url('/imagens/banner-premium-maadv.png') center/cover no-repeat;">
+    <div class="logo-centered">
+      <img src="/imagens/logo-simbolo-ma.png" alt="MA">
+      <h1>MARINHO & ALBUQUERQUE</h1>
+      <p>Consultoria e Advocacia</p>
+      <a class="btn" href="https://wa.me/5511943888812" target="_blank" rel="noopener">Fale conosco no WhatsApp</a>
+    </div>
+  </section>
 
-  <main>
-    <section id="sobre">
-      <h2>Sobre Nós</h2>
-      <p>O escritório Marinho & Albuquerque oferece assessoria jurídica completa nas áreas Cível, Família, Empresarial e Ambiental, com atendimento personalizado e compromisso com resultados.</p>
-    </section>
+  <!-- Sobre -->
+  <section id="sobre" class="section">
+    <h2>Sobre Nós</h2>
+    <p class="lead">O escritório Marinho & Albuquerque é comprometido com excelência técnica e atendimento personalizado. 
+      Atuamos de forma estratégica em diversas áreas do Direito, garantindo ética, transparência e resultado.</p>
+  </section>
 
-    <section id="areas">
-      <h2>Áreas de Atuação</h2>
-      <ul>
-        <li>Direito Cível</li>
-        <li>Direito de Família e Sucessões</li>
-        <li>Direito Empresarial</li>
-        <li>Direito Ambiental</li>
-      </ul>
-    </section>
+  <!-- Áreas de Atuação -->
+  <section id="areas" class="section alt">
+    <h2>Áreas de Atuação</h2>
+    <div class="grid">
+      <div class="card"><h3>Direito Cível</h3><p>Contratos, responsabilidade civil, cobrança, consumidor e imóveis.</p></div>
+      <div class="card"><h3>Família e Sucessões</h3><p>Alimentos, guarda, divórcio, inventário e mediação.</p></div>
+      <div class="card"><h3>Empresarial</h3><p>Consultoria preventiva, societário, contratos e contencioso.</p></div>
+      <div class="card"><h3>Ambiental</h3><p>Compliance, autos de infração, defesas técnicas e licenciamento.</p></div>
+    </div>
+  </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>📞 WhatsApp: <a href="https://wa.me/5511943888812" target="_blank">(11) 94388-8812</a></p>
-      <p>📧 E-mail: marinhoealbuquerque@gmail.com</p>
-      <p>📸 Instagram: <a href="https://www.instagram.com/marinhoealbuquerque.jur" target="_blank">@marinhoealbuquerque.jur</a></p>
-    </section>
-  </main>
+  <!-- Equipe -->
+  <section id="equipe" class="section">
+    <h2>Equipe</h2>
+    <div class="team">
+      <div class="person">
+        <img src="/imagens/assinatura-maadv.jpeg" alt="Lucas Albuquerque">
+        <h4>Lucas Albuquerque de Oliveira</h4>
+        <p>OAB/SP 506.001 — Sócio</p>
+      </div>
+      <div class="person">
+        <img src="/imagens/assinatura-maadv.jpeg" alt="Alex Marinho">
+        <h4>Alex de Pontes Marinho</h4>
+        <p>Sócio</p>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Marinho & Albuquerque – Consultoria e Advocacia</p>
+  <!-- Contato -->
+  <section id="contato" class="section alt">
+    <h2>Contato</h2>
+    <div class="contact-grid">
+      <div>
+        <ul class="info">
+          <li>📍 <strong>Unidade 1:</strong> Alameda Grajaú, 614, sala 401, Alphaville.</li>
+          <li>📍 <strong>Unidade 2:</strong> Rua Iperó, 80, Jardim Santa Maria, Guarulhos.</li>
+          <li>📞 Tel: 11 2680-0534</li>
+          <li>💬 WhatsApp: <a href="https://wa.me/5511943888812" target="_blank" rel="noopener">(11) 94388-8812</a></li>
+          <li>📧 E-mail: <a href="mailto:marinhoealbuquerque@gmail.com">marinhoealbuquerque@gmail.com</a></li>
+          <li>📸 Instagram: <a href="https://www.instagram.com/marinhoealbuquerque.jur" target="_blank" rel="noopener">@marinhoealbuquerque.jur</a></li>
+        </ul>
+      </div>
+      <div>
+        <iframe title="Mapa Alphaville"
+          src="https://www.google.com/maps?q=Alameda+Graja%C3%BA+614+Alphaville&output=embed"
+          width="100%" height="220" style="border:0;border-radius:12px;" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <img src="/imagens/logo-simbolo-ma.png" alt="MA">
+        <div class="sub">Marinho & Albuquerque — Consultoria e Advocacia</div>
+      </div>
+      <div class="sub">
+        © 2025 — Todos os direitos reservados.  
+        Preferência por logotipo preto em fundos claros e branco em fundos escuros, conforme manual institucional.
+      </div>
+    </div>
   </footer>
 
-  <a href="https://wa.me/5511943888812" class="whatsapp" target="_blank">💬</a>
+  <!-- WhatsApp flutuante -->
+  <a class="whats" href="https://wa.me/5511943888812" target="_blank" aria-label="WhatsApp">💬</a>
 </body>
 </html>
