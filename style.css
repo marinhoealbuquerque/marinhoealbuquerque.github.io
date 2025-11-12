@@ -287,3 +287,23 @@ body{
 .accordion-item.active .accordion-header {
   background: #e8e8e8;
 }
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.85;
+}
+
+.map-container {
+  margin-top: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+}
