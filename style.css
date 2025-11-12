@@ -86,7 +86,7 @@ body{
   margin-left:-50vw;
   margin-right:-50vw;
   width:100vw;
-  height:clamp(130px, 15vw, 220px);
+  height:clamp(150px, 18vw, 260px);
   background:#000 url('imagens/topo.png') center / cover no-repeat;
   border-bottom:1px solid #1e1e1e;
   max-width:none !important;
