@@ -1,6 +1,5 @@
 /* =========================
    MARINHO & ALBUQUERQUE – Consultoria e Advocacia
-   Identidade visual oficial
    ========================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
@@ -70,28 +69,16 @@ body {
 }
 .nav a:hover { color: #fff; }
 
-/* ====== Topo (cabeçalho visual) ====== */
+/* ====== Imagem de topo ====== */
 .hero {
   position: relative;
-  text-align: center;
-  height: 380px;
-  background: url('/imagens/topo.png') center center / contain no-repeat #000;
-  background-color: #000;
+  height: 250px; /* reduzida */
+  background: url('/imagens/topo.png') center top / cover no-repeat #000;
   border-bottom: 1px solid #1e1e1e;
-  color: var(--branco);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
-.hero h1 {
-  font-family: Poppins, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  margin-bottom: 6px;
-}
-.hero p { color: #ccc; }
 
 /* ====== Seções ====== */
 .section {
@@ -110,24 +97,6 @@ body {
   color: var(--cinza-90);
 }
 
-/* ====== Cards ====== */
-.grid {
-  display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-.card {
-  padding: 18px;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  background: #fff;
-  transition: all .3s ease;
-}
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,.1);
-}
-
 /* ====== Equipe ====== */
 .team {
   display: grid;
@@ -141,7 +110,6 @@ body {
   background: #fff;
   text-align: center;
 }
-.person img { display: none; }
 
 /* ====== Contato ====== */
 .info li {
@@ -159,22 +127,17 @@ body {
   background: var(--preto);
   color: #ccc;
   text-align: center;
-  padding: 30px 20px;
+  padding: 25px 20px;
 }
-.footer-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.footer-logo img {
-  height: 30px;
-  opacity: .85;
+.footer-logo {
+  height: 26px;
+  opacity: 0.85;
+  display: block;
+  margin: 0 auto 6px;
 }
 .footer-text {
   font-size: .9rem;
   color: #aaa;
-  line-height: 1.4;
 }
 
 /* ====== Botão WhatsApp ====== */
@@ -182,18 +145,21 @@ body {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #25d366;
   box-shadow: 0 8px 20px rgba(0,0,0,.25);
+  transition: transform 0.2s ease;
 }
+.whats:hover { transform: scale(1.05); }
 .whats img {
   width: 28px;
   height: 28px;
+  display: block;
 }
 
 /* ====== Responsivo ====== */
